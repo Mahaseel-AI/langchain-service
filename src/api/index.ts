@@ -7,7 +7,7 @@ const router = express.Router();
 
 router.get<{}, MessageResponse>("/", (req, res) => {
   res.json({
-    message: "API is Running ... - 👋🌎🌍🌏",
+    message: "👋🌎 API is Running ... - 👋🌎🌍🌏",
   });
 });
 
