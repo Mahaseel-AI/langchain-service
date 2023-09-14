@@ -6,6 +6,12 @@ on:
   push:
     branches: 
       [ main ]
+
+    pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches:
+      - main
+      
     paths:
     - '//**'
     - '.github/workflows/langchain-service-AutoDeployTrigger-76a69f15-1ef3-4376-ae5e-f3f4be53244d.yml'
