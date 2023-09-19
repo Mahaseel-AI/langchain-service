@@ -23,8 +23,14 @@ const main = async () => {
       },
       label: "test",
     };
-    await yieldSender.sendMessages(message);
-    await disesaseSendwer.sendMessages(message);
+    await yieldSender.sendMessages({
+      ...message,
+      body: { ...message.body, event: "YIELD_RESPONSE" },
+    });
+    await disesaseSendwer.sendMessages({
+      ...message,
+      body: { ...message.body, event: "DISEASE_RESPONSE" },
+    });
   }
   console.log("end");
 };
@@ -44,4 +50,4 @@ receiver.subscribe({
   processError: myErrorHandler,
 });
 
-main()
+main();
