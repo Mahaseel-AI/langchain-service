@@ -1,7 +1,7 @@
 import { DaprClient } from "dapr-client";
 
 const DAPR_HOST = process.env.DAPR_HOST ?? "http://localhost";
-const DAPR_HTTP_PORT = process.env.DAPR_HTTP_PORT ?? "3501";
+const DAPR_HTTP_PORT = process.env.DAPR_HTTP_PORT ?? "3500";
 const PUBSUB_NAME = "Mahaseel-bus";
 const PUBSUB_TOPIC = "chatbot-topic";
 
