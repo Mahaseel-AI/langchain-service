@@ -18,7 +18,7 @@ app.use(express.json());
 
 app.get<{}, MessageResponse>("/", (req, res) => {
   res.json({
-    message: "✨ langchain Services is running V2 ...✨",
+    message: "✨ langchain Services is running V4 ...✨",
   });
 });
 
